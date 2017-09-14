@@ -7,7 +7,7 @@ lazy val akkaParadox = project
 
 lazy val akkaTheme = project
   .in(file("theme"))
-  .enablePlugins(ParadoxThemePlugin)
+  .enablePlugins(ParadoxThemePlugin, ReproducibleBuildsPlugin)
   .settings(
     organization := "com.lightbend.akka",
     name := "paradox-theme-akka",
@@ -19,6 +19,7 @@ lazy val akkaTheme = project
 
 lazy val akkaPlugin = project
   .in(file("plugin"))
+  .enablePlugins(ReproducibleBuildsPlugin)
   .settings(
     sbtPlugin := true,
     organization := "com.lightbend.akka",
