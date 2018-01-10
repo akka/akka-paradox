@@ -19,7 +19,7 @@ cache:
 deploy:
   provider: script
   script:
-    - sbt -J-XX:ReservedCodeCacheSize=128m ^publish
+    - sbt -J-XX:ReservedCodeCacheSize=128m publish
   on:
     tags: true
     repo: akka/akka-paradox
