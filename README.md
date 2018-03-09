@@ -10,10 +10,16 @@ Use the sbt plugin for Akka Paradox:
 addSbtPlugin("com.lightbend.akka" % "sbt-paradox-akka" % "<version>")
 ```
 
-And then enable it instead of the upstream `ParadoxPlugin`:
+Enable it instead of the upstream `ParadoxPlugin`:
 
 ```scala
 enablePlugins(AkkaParadoxPlugin)
+```
+
+And add JCenter resolver to the project where `AkkaParadoxPlugin` is enabled. This is needed for the [Akka Paradox Theme](https://bintray.com/akka/maven/paradox-theme-akka) to be resolved:
+
+```scala
+resolvers += Resolver.jcenterRepo
 ```
 
 For more settings refer to the [Paradox documentation](https://developer.lightbend.com/docs/paradox/latest/)
