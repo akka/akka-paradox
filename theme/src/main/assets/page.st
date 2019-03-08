@@ -6,8 +6,8 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="$page.properties.("project.description")$"/>
-$if(page.properties.("akka.canonical.base_url"))$
-<link rel="canonical" href="$page.properties.("akka.canonical.base_url")$/$page.self.absolute.href$"/>
+$if(page.properties.("canonical.base_url"))$
+<link rel="canonical" href="$page.properties.("canonical.base_url")$/$page.self.absolute.href$"/>
 $endif$
 <script type="text/javascript" src="$page.base$lib/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="$page.base$lib/foundation/dist/js/foundation.min.js"></script>
