@@ -146,7 +146,9 @@ $source()$
 <style type="text/css">@import "$page.base$lib/prettify/prettify.css";</style>
 <script type="text/javascript" src="$page.base$lib/prettify/prettify.js"></script>
 <script type="text/javascript" src="$page.base$lib/prettify/lang-scala.js"></script>
-<script type="text/javascript"><![CDATA[jQuery(function(){window.prettyPrint && prettyPrint()});]]></script>
+<script type="text/javascript">//<![CDATA[
+jQuery(function(){window.prettyPrint && prettyPrint()});
+//]]></script>
 $search()$
 $projectSpecificFooter()$
 
