@@ -26,6 +26,22 @@ resolvers += Resolver.jcenterRepo
 
 For more settings refer to the [Paradox documentation](https://developer.lightbend.com/docs/paradox/latest/)
 
+## Testing
+
+When you have made changes to akka-paradox, you can test it locally with:
+
+```
+sbt publishLocal sbtPlugin/scripted
+```
+
+This should show:
+
+```
+Pausing in /tmp/sbt_e457458e/simple
+Press enter to continue.
+```
+
+Now in your browser you can see the docs at file:///tmp/sbt_e457458e/simple/target/paradox/site/main/index.html
 
 ## Releasing
 

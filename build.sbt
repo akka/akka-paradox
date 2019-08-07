@@ -21,10 +21,15 @@ lazy val akkaTheme = project
 
 lazy val akkaPlugin = project
   .in(file("plugin"))
+  .enablePlugins(SbtPlugin)
   .settings(
     sbtPlugin := true,
     organization := "com.lightbend.akka",
     name := "sbt-paradox-akka",
+    scriptedLaunchOpts := { scriptedLaunchOpts.value ++
+      Seq("-Xmx1024M", "-Dplugin.version=" + version.value)
+    },
+    scriptedBufferLog := false,
     bintrayRepository := "sbt-plugin-releases",
     addSbtPlugin(
       "com.lightbend.paradox" % "sbt-paradox" % "0.6.1"
