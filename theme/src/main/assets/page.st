@@ -16,6 +16,7 @@ $endif$
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
 <link rel="stylesheet" type="text/css" href="$page.base$css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="$page.base$css/page.css"/>
+<link rel="stylesheet" type="text/css" href="$page.base$css/banner.css"/>
 <link rel="shortcut icon" href="$page.base$images/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="$page.base$images/apple-touch-icon.png"/>
 <link rel="icon" type="image/png" sizes="32x32" href="$page.base$images/favicon-32x32.png"/>
@@ -35,107 +36,102 @@ $analytics()$
 </head>
 
 <body id="underlay" data-toggler="nav-open">
-
-<header class="site-header hide-for-large">
-<div class="sticky-header clearfix">
-$logo()$
-<button class="menu-icon float-right" type="button" data-toggle="underlay overlay"></button>
-</div>
-<div id="overlay" class="overlay-nav" data-toggler="nav-open">
-<header class="nav-header">
-<div class="nav-header-title">
-<h1><a href="$page.home.href$">$page.home.title$</a></h1>
-</div>
-<div class="nav-header-version">
-Version $page.properties.("project.version")$
-</div>
-<div class="nav-header-groups">
-$page.groups$
-</div>
-$if(page.properties.("algolia.docsearch.api_key"))$
-<div id="overlay-search-container" class="nav-header-search">
-<input id="overlay-search" type="search" class="search" placeholder="Search"/>
-</div>
-$endif$
-</header>
-<nav class="nav-toc">
-$page.navigation$
-</nav>
-</div>
-</header>
-
-<aside class="show-for-large">
-<header class="nav-header fixed-sidebar-header">
-<div class="nav-header-title">
-<h1><a href="$page.home.href$">$page.home.title$</a></h1>
-</div>
-<div class="nav-header-version">
-Version $page.properties.("project.version")$
-</div>
-<div class="nav-header-groups">
-$page.groups$
-</div>
-$if(page.properties.("algolia.docsearch.api_key"))$
-<div class="nav-header-search">
-<input id="search" type="search" class="search" placeholder="Search"/>
-</div>
-$endif$
-</header>
-<nav class="site-nav fixed-sidebar-contents">
-<div class="nav-toc">
-$page.navigation$
-</div>
-</nav>
-<footer class="nav-footer fixed-sidebar-footer">
-$logo()$
-</footer>
-</aside>
-
-<main class="fixed-shift-for-large expanded row">
-<section class="site-content small-12 column">
-
-<article class="page-content row">
-<div class="small-12 large-9 column" id="docs">
-$page.content$
-</div>
-</article>
-
-<div class="row">
-<div class="small-12 large-9 column">
-<section class="nav-prev-next row">
-<div class="nav-prev small-6 column">
-$if(page.prev.href)$
-<a href="$page.prev.href$"><i class="icon-prev"></i> <span class="link-prev">$page.prev.title$</span></a>
-$endif$
-</div>
-<div class="nav-next small-6 column clearfix">
-$if(page.next.href)$
-<a class="float-right" href="$page.next.href$">$page.next.title$ <i class="icon-next"></i></a>
-$endif$
-</div>
-</section>
-</div>
-</div>
-
-$source()$
-
-<footer class="page-footer row clearfix">
-<img class="akka-icon float-left show-for-medium" src="$page.base$images/akka-icon.svg"/>
-<section class="copyright">
-<div>$page.properties.("project.name")$ is Open Source and available under the Apache 2 License.</div>
-<p class="legal">
-    &copy; 2011-$page.properties.("date.year")$ <a href="https://www.lightbend.com" target="_blank">Lightbend, Inc.</a> | 
-    <a href="https://www.lightbend.com/legal/licenses" target="_blank">Licenses</a> | 
-    <a href="https://www.lightbend.com/legal/terms" target="_blank">Terms</a> | 
-    <a href="https://www.lightbend.com/legal/privacy" target="_blank">Privacy Policy</a> | 
-    <a href="https://akka.io/cookie/" target="_blank">Cookie Listing</a> | 
-    <a class="optanon-toggle-display">Cookie Settings</a>
-  </p>
-</section>
-</footer>
-
-</section>
-</main>
+	$lbHeader()$
+	<header class="site-header hide-for-large">
+		<div class="sticky-header clearfix">
+			$logo()$
+			<button class="menu-icon float-right" type="button" data-toggle="underlay overlay"></button>
+		</div>
+		<div id="overlay" class="overlay-nav" data-toggler="nav-open">
+			<header class="nav-header">
+				<div class="nav-header-title">
+					<h1><a href="$page.home.href$">$page.home.title$</a></h1>
+				</div>
+				<div class="nav-header-version">
+					Version $page.properties.("project.version")$
+				</div>
+				<div class="nav-header-groups">
+					$page.groups$
+				</div>
+				$if(page.properties.("algolia.docsearch.api_key"))$
+				<div id="overlay-search-container" class="nav-header-search">
+					<input id="overlay-search" type="search" class="search" placeholder="Search" />
+				</div>
+				$endif$
+			</header>
+			<nav class="nav-toc">
+				$page.navigation$
+			</nav>
+		</div>
+	</header>
+	<div class="site-content-wrapper">
+		<aside class="sticky-sidebar show-for-large">
+			<header class="nav-header sticky-sidebar-header">
+				<div class="nav-header-title">
+					<h1><a href="$page.home.href$">$page.home.title$</a></h1>
+				</div>
+				<div class="nav-header-version">
+					Version $page.properties.("project.version")$
+				</div>
+				<div class="nav-header-groups">
+					$page.groups$
+				</div>
+				$if(page.properties.("algolia.docsearch.api_key"))$
+				<div class="nav-header-search">
+					<input id="search" type="search" class="search" placeholder="Search" />
+				</div>
+				$endif$
+			</header>
+			<nav class="site-nav sticky-sidebar-contents">
+				<div class="nav-toc">
+					$page.navigation$
+				</div>
+			</nav>
+			<footer class="nav-footer sticky-sidebar-footer">
+				$logo()$
+			</footer>
+		</aside>
+		<main class="fixed-shift-for-large expanded row">
+			<section class="site-content small-12 column">
+				<article class="page-content row">
+					<div class="small-12 column" id="docs">
+						$page.content$
+					</div>
+				</article>
+				<div class="row">
+					<div class="small-12 column">
+						<section class="nav-prev-next row">
+							<div class="nav-prev small-6 column">
+								$if(page.prev.href)$
+								<a href="$page.prev.href$"><i class="icon-prev"></i> <span class="link-prev">$page.prev.title$</span></a>
+								$endif$
+							</div>
+							<div class="nav-next small-6 column clearfix">
+								$if(page.next.href)$
+								<a class="float-right" href="$page.next.href$">$page.next.title$ <i class="icon-next"></i></a>
+								$endif$
+							</div>
+						</section>
+					</div>
+				</div>
+				$source()$
+				<footer class="page-footer row clearfix">
+					<img class="akka-icon float-left show-for-medium" src="$page.base$images/akka-icon.svg" />
+					<section class="copyright">
+						<div>$page.properties.("project.name")$ is Open Source and available under the Apache 2 License.</div>
+						<p class="legal">
+							&copy; 2011-$page.properties.("date.year")$ <a href="https://www.lightbend.com" target="_blank">Lightbend, Inc.</a> |
+							<a href="https://www.lightbend.com/legal/licenses" target="_blank">Licenses</a> |
+							<a href="https://www.lightbend.com/legal/terms" target="_blank">Terms</a> |
+							<a href="https://www.lightbend.com/legal/privacy" target="_blank">Privacy Policy</a> |
+							<a href="https://akka.io/cookie/" target="_blank">Cookie Listing</a> |
+							<a class="optanon-toggle-display">Cookie Settings</a>
+						</p>
+					</section>
+				</footer>
+			</section>
+		</main>
+	</div>
 
 <script type="text/javascript" src="$page.base$js/scrollsneak.js"></script>
 <script type="text/javascript">jQuery(document).foundation();</script>
