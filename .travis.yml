@@ -1,7 +1,10 @@
 language: scala
 
-jdk:
-  - oraclejdk8
+before_install:
+  # using jabba for custom jdk management
+  - curl -sL https://raw.githubusercontent.com/shyiko/jabba/0.11.2/install.sh | bash && . ~/.jabba/jabba.sh
+  - jabba install $TRAVIS_JDK
+install: jabba use "$TRAVIS_JDK" && java -Xmx32m -version
 
 script:
   - sbt test
@@ -14,6 +17,7 @@ cache:
   directories:
     - $HOME/.ivy2/cache
     - $HOME/.sbt/boot
+    - $HOME/.jabba/jdk
 
 deploy:
   provider: script
@@ -25,6 +29,7 @@ deploy:
 
 env:
   global:
+    - TRAVIS_JDK=adopt@~1.8.202-08
     # encrypt with: travis encrypt BINTRAY_USER=...
     - secure: "TZ5/EpN2ZlMaEoY3A/tSkhia6pJm8dAOs5Be2uE7GVl9O/frE8fgp96G8kI6PicexM5Awwpkf94o50FVWx+89GyXVDHMPlOUIdiPANPo7YlNjgovzVAF5i6HK5nqpJWetdp+i/JanMDCJ9Cu9A+vE6KTUat1ye0qKLW2s8TOWMpL9Zz/fq1eQmZNvXOzBwMVYfDLXILYYOw5AdeS8o2OYw+rpymTU5oHwT0xOAdTAYSUqKJGPeWzg7wI/npZmCJ7h/JS3rZxdEWmWSRg+6zIOOtHm5ggPB4/TkoT9me/OobYex53tmeowRBFGVojfPK0UGvqJtMuMkv+GMu9oqBiVrf+XNMwDc8Awe0ewv9CRfTY4GnqLicePFS83Xo9KT1PqxzeEAO+kbL40gIZgoySvlwrgfGBvXRm4ucAjDB2ZBa6wGEJwWDYISH7yXJ2NVSlGQ1DpepwwuDfrKCuwbZLbK1wpS/KkOW4vFlHkYbiPmwmTtnxpb0zhzzCCemb9yDn395IDHCRzGolY3Q9ic6JQlxKXPBDkzwG/Qb27y5XdQ0WKow+9EvWGzbHFnsAzR7XtKL2oOUWLpD4G1D7/nP/zwAXifrN2O5aoM0wjXWDBAtaOXhd2D3xy9uS3zC0r2v9Ht43L+Syb962Dc0MvGHe0rfXi08TafsQEi+xiK2xC8o="
     # encrypt with: travis encrypt BINTRAY_PASS=...
