@@ -132,7 +132,7 @@ body {
 
 @media screen and (min-width:110em) {
   .fixed-shift-for-large {
-    margin: auto;
+    margin: 0 auto;
   }
 }
 
