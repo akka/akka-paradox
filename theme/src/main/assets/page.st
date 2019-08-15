@@ -15,7 +15,7 @@ $endif$
 <link rel="stylesheet" type="text/css" href="$page.base$lib/foundation/dist/css/foundation.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
 <link rel="stylesheet" type="text/css" href="$page.base$css/icons.css"/>
-<link rel="stylesheet" type="text/css" href="$page.base$css/page.css"/>
+<link rel="stylesheet" type="text/css" href="$page.base$css/page-2.css"/>
 <link rel="stylesheet" type="text/css" href="$page.base$css/banner.css"/>
 <link rel="shortcut icon" href="$page.base$images/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="$page.base$images/apple-touch-icon.png"/>
