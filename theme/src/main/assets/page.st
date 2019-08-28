@@ -6,6 +6,9 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="$page.properties.("project.description")$"/>
+$if(page.properties.("meta.robots"))$
+<meta name="robots" content="$page.properties.("meta.robots")$"/>
+$endif$
 $if(page.properties.("canonical.base_url"))$
 <link rel="canonical" href="$page.properties.("canonical.base_url")$/$page.self.absolute.href$"/>
 $endif$
@@ -15,7 +18,7 @@ $endif$
 <link rel="stylesheet" type="text/css" href="$page.base$lib/foundation/dist/css/foundation.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
 <link rel="stylesheet" type="text/css" href="$page.base$css/icons.css"/>
-<link rel="stylesheet" type="text/css" href="$page.base$css/page-2.css"/>
+<link rel="stylesheet" type="text/css" href="$page.base$css/page-3.css"/>
 <link rel="stylesheet" type="text/css" href="$page.base$css/banner.css"/>
 <link rel="shortcut icon" href="$page.base$images/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="$page.base$images/apple-touch-icon.png"/>
@@ -117,19 +120,7 @@ $analytics()$
 				$source()$
 				<footer class="page-footer row clearfix">
 					<img class="akka-icon float-left show-for-medium" src="$page.base$images/akka-icon.svg" />
-					<section class="copyright">
-$if(page.property_is.("project.license").("Apache-2.0"))$
-						<div>$page.properties.("project.name")$ is Open Source and available under the Apache 2 License.</div>
-$endif$
-						<p class="legal">
-							&copy; 2011-$page.properties.("date.year")$ <a href="https://www.lightbend.com" target="_blank">Lightbend, Inc.</a> |
-							<a href="https://www.lightbend.com/legal/licenses" target="_blank">Licenses</a> |
-							<a href="https://www.lightbend.com/legal/terms" target="_blank">Terms</a> |
-							<a href="https://www.lightbend.com/legal/privacy" target="_blank">Privacy Policy</a> |
-							<a href="https://akka.io/cookie/" target="_blank">Cookie Listing</a> |
-							<a class="optanon-toggle-display">Cookie Settings</a>
-						</p>
-					</section>
+					$copyright()$
 				</footer>
 			</section>
 		</main>
