@@ -341,11 +341,17 @@ pre > code {
   padding: 0 !important;
 }
 
-h1 code, h2 code, h3 code, h4 code, h5 code, h6 code, a code {
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
   border: none;
   background: inherit;
   color: inherit;
   padding: 0 !important;
+}
+
+a code {
+  border: none;
+  color: inherit;
+  font-weight: bold !important;
 }
 
 /* definition lists */
