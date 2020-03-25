@@ -527,6 +527,7 @@ table code {
   }
   .lightbend-banner .wrapper {
     height: 50px !important;
+    padding-top: 3px !important;
   }
   .lightbend-banner .wrapper > div {
     height: 50px !important;
