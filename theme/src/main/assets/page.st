@@ -18,7 +18,7 @@ $endif$
 <link rel="stylesheet" type="text/css" href="$page.base$lib/foundation/dist/css/foundation.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
 <link rel="stylesheet" type="text/css" href="$page.base$css/icons.css"/>
-<link rel="stylesheet" type="text/css" href="$page.base$css/page-3.css"/>
+<link rel="stylesheet" type="text/css" href="$page.base$css/page-6.css"/>
 <link rel="stylesheet" type="text/css" href="$page.base$css/banner.css"/>
 <link rel="shortcut icon" href="$page.base$images/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="$page.base$images/apple-touch-icon.png"/>
@@ -131,6 +131,7 @@ $analytics()$
 <script type="text/javascript" src="$page.base$js/groups.js"></script>
 <script type="text/javascript" src="$page.base$js/page.js"></script>
 <script type="text/javascript" src="$page.base$js/magellan.js"></script>
+<script type="text/javascript" src="$page.base$js/metadata-toggle.js"></script>
 
 <style type="text/css">@import "$page.base$lib/prettify/prettify.css";</style>
 <script type="text/javascript" src="$page.base$lib/prettify/prettify.js"></script>

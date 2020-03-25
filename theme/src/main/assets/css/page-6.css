@@ -61,6 +61,11 @@ body {
 
 }
 
+
+.sticky-sidebar {
+  z-index: 990;
+}
+
 /* (large size) */
 @media screen and (min-width:64em) {
   .sticky-sidebar {
@@ -336,11 +341,17 @@ pre > code {
   padding: 0 !important;
 }
 
-h1 code, h2 code, h3 code, h4 code, h5 code, h6 code, a code {
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
   border: none;
   background: inherit;
   color: inherit;
   padding: 0 !important;
+}
+
+a code {
+  border: none;
+  color: inherit;
+  font-weight: bold !important;
 }
 
 /* definition lists */
@@ -995,4 +1006,36 @@ body .optanon-alert-box-wrapper .optanon-alert-box-bottom-padding {
 .flex-video .cookie-warning p>a:hover {
     background: #107F9B;
     color: white
+}
+
+
+/* project/module metadata info table from sbt-paradox-project-info
+  hidden initially, link toggles, see metadata-toggle.js
+*/
+table.project-info {
+  display: none;
+}
+
+table.project-info tbody {
+  border: none;
+  border-left: 10px solid #15a9ce;
+}
+
+table.project-info tbody tr:nth-child(even) {
+  background-color: #f7f7f7 !important;
+}
+
+table.project-info th {
+  text-align: left;
+  vertical-align: top;
+  color: #0b5567;
+  font-weight: normal;
+}
+
+table.project-info td {
+  border: none;
+}
+
+a.project-info-toggle {
+  margin-bottom: 16px;
 }
