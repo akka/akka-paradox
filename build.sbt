@@ -32,10 +32,10 @@ lazy val akkaPlugin = project
     scriptedBufferLog := false,
     bintrayRepository := "sbt-plugin-releases",
     addSbtPlugin(
-      "com.lightbend.paradox" % "sbt-paradox" % "0.7.0"
+      "com.lightbend.paradox" % "sbt-paradox" % "0.8.0"
     ),
-    addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-apidoc" % "0.9"),
-    addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-project-info" % "1.1.3"),
+    addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-apidoc" % "0.10"),
+    addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-project-info" % "1.1.4"),
     resourceGenerators in Compile += Def.task {
       val file = (resourceManaged in Compile).value / "akka-paradox.properties"
       IO.write(file, s"akka.paradox.version=${version.value}")
