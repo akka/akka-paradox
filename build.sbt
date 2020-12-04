@@ -14,7 +14,7 @@ lazy val akkaTheme = project
     organization := "com.lightbend.akka",
     name := "paradox-theme-akka",
     libraryDependencies ++= Seq(
-      "org.webjars" % "foundation" % "6.3.1" % "provided",
+      "org.webjars" % "foundation" % "6.4.3-1" % "provided",
       "org.webjars" % "prettify" % "4-Mar-2013-1" % "provided"
     )
   )
