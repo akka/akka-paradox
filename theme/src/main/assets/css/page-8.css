@@ -1009,6 +1009,49 @@ body .optanon-alert-box-wrapper .optanon-alert-box-bottom-padding {
     color: white
 }
 
+body #onetrust-pc-sdk .ot-switch {
+    width: 45px !important;
+    padding: 0 !important;
+}
+body #onetrust-pc-sdk .ot-switch-nob:before  {
+    transform: translateX(2px); 
+}
+body .onetrust-pc-dark-filter {
+    background: rgba(0,0,0,.75);
+}
+body #onetrust-button-group {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: flex-end !important;
+    text-align: left !important;
+}
+body #onetrust-accept-btn-handler {
+    opacity: 1 !important;
+    transition: all 300ms ease-in-out;
+    outline: none !important;
+}
+body #onetrust-pc-sdk #close-pc-btn-handler.ot-close-icon {
+    outline: none !important;
+}
+body #onetrust-accept-btn-handler:hover {
+    background-color: #0B5567 !important;
+    border-color: #0B5567 !important;
+    transition: all 300ms ease-in-out;
+}
+body .ot-pc-footer-logo {
+    display: none;
+}
+body #onetrust-pc-sdk .ot-cat-grp .ot-always-active {
+    color: #6cc04a;
+}
+body #onetrust-pc-sdk .ot-tgl input:checked+.ot-switch .ot-switch-nob {
+    border-color: #6cc04a;
+    background-color: #d4e8cb;
+}
+body #onetrust-pc-sdk .ot-tgl input:checked+.ot-switch .ot-switch-nob:before {
+    background-color: #6cc04a;
+}
+
 
 /* project/module metadata info table from sbt-paradox-project-info
   hidden initially, link toggles, see metadata-toggle.js
