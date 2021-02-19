@@ -130,6 +130,7 @@ $analytics()$
 <script type="text/javascript">jQuery(document).foundation();</script>
 <script type="text/javascript" src="$page.base$js/groups.js"></script>
 <script type="text/javascript" src="$page.base$js/page.js"></script>
+<script type="text/javascript" src="$page.base$js/snippets.js"></script>
 <script type="text/javascript" src="$page.base$js/magellan.js"></script>
 <script type="text/javascript" src="$page.base$js/metadata-toggle.js"></script>
 
