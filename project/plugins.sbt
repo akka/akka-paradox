@@ -1,4 +1,4 @@
-addSbtPlugin("com.github.gseitz"     % "sbt-release"       % "1.0.13")
+addSbtPlugin("com.github.sbt"     % "sbt-release"       % "1.0.14")
 // even update the paradox plugin in build.sbt
 addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-theme" % "0.9.2")
 addSbtPlugin("com.dwijnand"          % "sbt-dynver"        % "4.1.1")
