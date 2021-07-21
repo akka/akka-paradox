@@ -245,15 +245,29 @@ a.anchor .anchor-link:before {
   content: '§';
 }
 
-a.go-to-source::before {
-  content: "📄";
-}
-
-.prettyprint .icon {
+.site-content .page-content .prettyprint .snippet-button {
   float: right;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  speak: none;
+  color: #0b5567;
+  border: 2px solid #e5e6e4;
+  padding: 4px 4px;
+  margin-left: 8px;
+  line-height: 1.2;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-a.anchor .anchor-link, .icon {
+.site-content .page-content .prettyprint .snippet-button:hover {
+  background-color: #e5e6e4;
+  border: 2px solid #0b5567;
+}
+
+a.anchor .anchor-link {
   font-size: 1.2rem;
   font-family: "icons";
   font-style: normal;
@@ -269,9 +283,6 @@ a.anchor .anchor-link, .icon {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a.icon {
-   text-decoration: none;
-}
 
 /* adjust anchor targets for sticky header (not large size) */
 @media screen and (max-width:63.9375em) {
@@ -1007,6 +1018,49 @@ body .optanon-alert-box-wrapper .optanon-alert-box-bottom-padding {
 .flex-video .cookie-warning p>a:hover {
     background: #107F9B;
     color: white
+}
+
+body #onetrust-pc-sdk .ot-switch {
+    width: 45px !important;
+    padding: 0 !important;
+}
+body #onetrust-pc-sdk .ot-switch-nob:before  {
+    transform: translateX(2px); 
+}
+body .onetrust-pc-dark-filter {
+    background: rgba(0,0,0,.75);
+}
+body #onetrust-button-group {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: flex-end !important;
+    text-align: left !important;
+}
+body #onetrust-accept-btn-handler {
+    opacity: 1 !important;
+    transition: all 300ms ease-in-out;
+    outline: none !important;
+}
+body #onetrust-pc-sdk #close-pc-btn-handler.ot-close-icon {
+    outline: none !important;
+}
+body #onetrust-accept-btn-handler:hover {
+    background-color: #0B5567 !important;
+    border-color: #0B5567 !important;
+    transition: all 300ms ease-in-out;
+}
+body .ot-pc-footer-logo {
+    display: none;
+}
+body #onetrust-pc-sdk .ot-cat-grp .ot-always-active {
+    color: #6cc04a;
+}
+body #onetrust-pc-sdk .ot-tgl input:checked+.ot-switch .ot-switch-nob {
+    border-color: #6cc04a;
+    background-color: #d4e8cb;
+}
+body #onetrust-pc-sdk .ot-tgl input:checked+.ot-switch .ot-switch-nob:before {
+    background-color: #6cc04a;
 }
 
 

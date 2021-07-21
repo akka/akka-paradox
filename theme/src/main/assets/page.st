@@ -18,7 +18,7 @@ $endif$
 <link rel="stylesheet" type="text/css" href="$page.base$lib/foundation/dist/css/foundation.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
 <link rel="stylesheet" type="text/css" href="$page.base$css/icons.css"/>
-<link rel="stylesheet" type="text/css" href="$page.base$css/page-7.css"/>
+<link rel="stylesheet" type="text/css" href="$page.base$css/page-8.css"/>
 <link rel="stylesheet" type="text/css" href="$page.base$css/banner-1.css"/>
 <link rel="shortcut icon" href="$page.base$images/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="$page.base$images/apple-touch-icon.png"/>
@@ -30,7 +30,7 @@ $endif$
 <meta name="theme-color" content="#15a9ce"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <!-- OneTrust Cookies Consent Notice (Production Standard, akka.io, en-GB) start -->
-<script src="https://optanon.blob.core.windows.net/consent/159bb13d-6748-4399-806e-ac28db879785.js" type="text/javascript" charset="UTF-8"></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="28b912e7-09e9-43d5-91e4-3d1897044004" ></script>
 <script type="text/javascript">
 function OptanonWrapper() { }
 </script>
@@ -130,6 +130,7 @@ $analytics()$
 <script type="text/javascript">jQuery(document).foundation();</script>
 <script type="text/javascript" src="$page.base$js/groups.js"></script>
 <script type="text/javascript" src="$page.base$js/page.js"></script>
+<script type="text/javascript" src="$page.base$js/snippets.js"></script>
 <script type="text/javascript" src="$page.base$js/magellan.js"></script>
 <script type="text/javascript" src="$page.base$js/metadata-toggle.js"></script>
 
