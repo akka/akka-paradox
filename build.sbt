@@ -40,8 +40,8 @@ lazy val akkaPlugin = project
     ),
     addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-apidoc" % "0.10"),
     addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-project-info" % "1.1.4"),
-    resourceGenerators in Compile += Def.task {
-      val file = (resourceManaged in Compile).value / "akka-paradox.properties"
+    Compile / resourceGenerators += Def.task {
+      val file = (Compile / resourceManaged).value / "akka-paradox.properties"
       IO.write(file, s"akka.paradox.version=${version.value}")
       Seq(file)
     }
