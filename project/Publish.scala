@@ -1,12 +1,12 @@
 import sbt._
 import sbt.Keys._
-import sbt.plugins.JvmPlugin
 
 object Publish extends AutoPlugin {
 
   override def trigger = allRequirements
 
   override def projectSettings = Seq(
+    organization := "com.lightbend",
     homepage := Some(url("https://developer.lightbend.com/docs/paradox")),
     developers := List(
       Developer(

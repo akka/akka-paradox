@@ -1,6 +1,5 @@
 scalaVersion := "2.13.5"
 
-sonatypeProfileName := "com.lightbend"
 licenses += "Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0.html")
 
 lazy val akkaParadox = project
