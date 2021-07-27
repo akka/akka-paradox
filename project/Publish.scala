@@ -1,12 +1,15 @@
 import sbt._
 import sbt.Keys._
+import xerial.sbt.Sonatype
 
 object Publish extends AutoPlugin {
+  import Sonatype.autoImport.sonatypeProfileName
 
   override def trigger = allRequirements
+  override def requires = Sonatype
 
   override def projectSettings = Seq(
-    organization := "com.lightbend",
+    sonatypeProfileName := "com.lightbend",
     homepage := Some(url("https://developer.lightbend.com/docs/paradox")),
     developers := List(
       Developer(
