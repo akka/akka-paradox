@@ -1,4 +1,6 @@
-scalaVersion := "2.13.5"
+scalaVersion := "2.13.6"
+
+licenses += "Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0.html")
 
 lazy val akkaParadox = project
   .in(file("."))
@@ -14,7 +16,7 @@ lazy val akkaTheme = project
     organization := "com.lightbend.akka",
     name := "paradox-theme-akka",
     libraryDependencies ++= Seq(
-      "org.webjars" % "foundation" % "6.3.1" % "provided",
+      "org.webjars" % "foundation" % "6.4.3-1" % "provided",
       "org.webjars" % "prettify" % "4-Mar-2013-1" % "provided"
     )
   )
@@ -30,14 +32,15 @@ lazy val akkaPlugin = project
       Seq("-Xmx1024M", "-Dplugin.version=" + version.value)
     },
     scriptedBufferLog := false,
-    bintrayRepository := "sbt-plugin-releases",
     addSbtPlugin(
+      // When updating the sbt-paradox version,
+      // remember to also update project/plugins.sbt
       "com.lightbend.paradox" % "sbt-paradox" % "0.9.2"
     ),
     addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-apidoc" % "0.10"),
     addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-project-info" % "1.1.4"),
-    resourceGenerators in Compile += Def.task {
-      val file = (resourceManaged in Compile).value / "akka-paradox.properties"
+    Compile / resourceGenerators += Def.task {
+      val file = (Compile / resourceManaged).value / "akka-paradox.properties"
       IO.write(file, s"akka.paradox.version=${version.value}")
       Seq(file)
     }
