@@ -1,4 +1,4 @@
-scalaVersion := "2.13.6"
+scalaVersion := "2.13.7"
 
 licenses += "Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0.html")
 
@@ -16,7 +16,11 @@ lazy val akkaTheme = project
     organization := "com.lightbend.akka",
     name := "paradox-theme-akka",
     libraryDependencies ++= Seq(
-      "org.webjars" % "foundation" % "6.4.3-1" % "provided",
+      // There are newer versions of foundation available, but
+      // they break the 3-column indexes and the left margin on
+      // zoomed-in breakpoints, so let's stick with 6.3.1 until
+      // we find time to fix that.
+      "org.webjars" % "foundation" % "6.3.1" % "provided",
       "org.webjars" % "prettify" % "4-Mar-2013-1" % "provided"
     )
   )
