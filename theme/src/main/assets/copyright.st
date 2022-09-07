@@ -2,6 +2,9 @@
 $if(page.property_is.("project.license").("Apache-2.0"))$
 						<div>$page.properties.("project.name")$ is Open Source and available under the Apache 2 License.</div>
 $endif$
+$if(page.property_is.("project.license").("BUSL-1.1"))$
+						<div>$page.properties.("project.name")$ is available under the <a href="https://www.lightbend.com/akka/license">Business Source License 1.1</a>.</div>
+$endif$
 						<p class="legal">
 							&copy; 2011-$page.properties.("date.year")$ <a href="https://www.lightbend.com" target="_blank">Lightbend, Inc.</a> |
 							<a href="https://www.lightbend.com/legal/licenses" target="_blank">Licenses</a> |
