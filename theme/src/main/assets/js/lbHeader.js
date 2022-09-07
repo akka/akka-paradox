@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
         //turn on first item
         rotatorItems[index].classList.add('visible');
         //rotate through items
-        setInterval(function(){ 
-            rotatorItems[index].classList.remove('visible');
-            if(index != rotatorItemsLength){index += 1;}else{index = 0;};
-            rotatorItems[index].classList.add('visible');
-        }, 9000);
+        if(rotatorItems.length > 1){
+            setInterval(function(){ 
+                rotatorItems[index].classList.remove('visible');
+                if(index != rotatorItemsLength){index += 1;}else{index = 0;};
+                rotatorItems[index].classList.add('visible');
+            }, 9000);
+        };
     };
 });

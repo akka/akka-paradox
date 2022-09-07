@@ -7,11 +7,8 @@
 		</div>
 		<div class="oss-ad no-drop-down">
 			<nav id="lightbendRotator" class="lightbend-rotator">
-				<a class="oss-track-link-label" data-category="OSS Lightbend Banner Clicks" data-label="Promo Rotator - Kalix - High-performance microservices and APIs with no operations required. - Akka Banner" href="https://www.kalix.io/">
-					<strong>Kalix</strong> - High-performance microservices and APIs with no operations required. <span class="akka-btn">Learn More</span>
-				</a>
-				<a class="oss-track-link-label" data-category="OSS Lightbend Banner Clicks" data-label="Promo Rotator - Meet Akka Insights! A stand alone telemetry & observability offering. [Learn More] - Akka Banner" href="https://www.lightbend.com/akka-insights">
-					<strong>Meet Akka Insights!</strong>&nbsp;&nbsp;A stand alone telemetry & observability offering. <span class="akka-btn">Learn More</span>
+				<a class="oss-track-link-label" data-category="OSS Lightbend Banner Clicks" data-label="Promo Rotator - Lightbend is Changing its Software Licensing Model for Akka Technology. [License FAQ] - Akka Banner" href="https://www.lightbend.com/akka/license-faq">
+					<strong>Lightbend</strong> is Changing its Software Licensing Model for Akka Technology. <span class="akka-btn">License FAQ</span>
 				</a>
 			</nav>
 		</div>
