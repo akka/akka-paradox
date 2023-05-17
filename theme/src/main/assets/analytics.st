@@ -1,4 +1,4 @@
-<!--Google Analytics-->
+<!--Google Analytics NOTE this will stop processing data July 1st 2023. At which point this embed code can be removed-->
 <script type="text/plain" class="optanon-category-2">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '$page.properties.("google.analytics.account")$']);
@@ -10,34 +10,12 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })()
 </script>
-<!-- Google Tag Manager -->
-<script type="text/plain" class="optanon-category-2">
+
+<!-- Google Tag Manager: Updated May 17th 2023 - Cookie Compliance checks have been moved into Google Tag Manager -->
+<script type="text/javascript">
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-KBJGH35');
-</script>
-<!--Marketo-->
-<script type="text/plain" class="optanon-category-3">
-  (function() {
-      var didInit = false;
-      function initMunchkin() {
-      if(didInit === false) {
-        didInit = true;
-        Munchkin.init('558-NCX-702', { 'asyncOnly': true, 'disableClickDelay': true });
-      }
-      }
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = '//munchkin.marketo.net/munchkin.js';
-      s.onreadystatechange = function() {
-      if (this.readyState == 'complete' || this.readyState == 'loaded') {
-        initMunchkin();
-      }
-      };
-      s.onload = initMunchkin;
-      document.getElementsByTagName('head')[0].appendChild(s);
-    })();
 </script>
