@@ -2,24 +2,20 @@
 
 /* fonts */
 
+/* Figtree */
 @font-face {
-  font-family: 'ProximaNova';
-  font-weight: normal;
+  font-family: 'Figtree';
+  font-weight: 400;
   font-style: normal;
-  src: url("fonts/proxima-nova-regular.eot");
-  src: url("fonts/proxima-nova-regular.eot?#iefix") format("embedded-opentype"),
-    url("fonts/proxima-nova-regular.woff") format("woff"),
-    url("fonts/proxima-nova-regular.ttf") format("truetype");
+  src: url('fonts/figtree-v4-latin-regular.woff2') format('woff2');
 }
 
+/* Figtree bold */
 @font-face {
-  font-family: 'ProximaNova';
-  font-weight: bold;
+  font-family: 'Figtree';
+  font-weight: 700;
   font-style: normal;
-  src: url("fonts/proxima-nova-bold.eot");
-  src: url("fonts/proxima-nova-bold.eot?#iefix") format("embedded-opentype"),
-    url("fonts/proxima-nova-bold.woff") format("woff"),
-    url("fonts/proxima-nova-bold.woff") format("truetype");
+  src: url('fonts/figtree-v4-latin-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -43,7 +39,7 @@ body {
   font-style: normal;
   line-height: 1.4em;
   cursor: default;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "Figtree", Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
