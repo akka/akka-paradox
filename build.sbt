@@ -39,7 +39,7 @@ lazy val akkaPlugin = project
     addSbtPlugin(
       // When updating the sbt-paradox version,
       // remember to also update project/plugins.sbt
-      "com.lightbend.paradox" % "sbt-paradox" % "0.10.4"
+      "com.lightbend.paradox" % "sbt-paradox" % "0.10.5"
     ),
     addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-apidoc" % "1.0.0"),
     addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-lightbend-project-info" % "2.0.0"),
