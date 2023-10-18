@@ -7,8 +7,8 @@
 		</div>
 		<div class="oss-ad no-drop-down">
 			<nav id="lightbendRotator" class="lightbend-rotator">
-				<a class="oss-track-link-label" data-category="OSS Lightbend Banner Clicks" data-label="Promo Rotator - Lightbend Changed its Software Licensing Model for Akka Technology. [License FAQ] - Akka Banner" href="https://www.lightbend.com/akka/license-faq">
-					<strong>Lightbend</strong> Changed its Software Licensing Model for Akka Technology. <span class="akka-btn">License FAQ</span>
+				<a class="oss-track-link-label" data-category="OSS Lightbend Banner Clicks" data-label="Promo Rotator - Introducing Akka Cloud to Edge Continuum. Build once for the Cloud. Seamlessly deploy to the Edge. [Learn more] - Akka Banner" href="https://www.lightbend.com/blog/cloud-to-edge-continuum">
+					Introducing Akka Cloud to Edge Continuum. Build once for the Cloud. Seamlessly deploy to the Edge. <span class="akka-btn">Learn more</span>
 				</a>
 			</nav>
 		</div>
