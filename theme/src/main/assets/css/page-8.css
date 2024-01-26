@@ -1090,3 +1090,8 @@ table.project-info td {
 a.project-info-toggle {
   margin-bottom: 16px;
 }
+
+/* hide build tool selector in navbar */
+select[name="BuildTool"] {
+  display: none;
+}
